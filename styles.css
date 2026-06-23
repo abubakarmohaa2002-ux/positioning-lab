@@ -1,0 +1,77 @@
+/*
+  🧠 PROJECT: Positioning Lab — relative/absolute/fixed/sticky
+*/
+
+/* STEP 1 — Base styling + ensure scroll exists */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filler {
+  min-height: 1200px;
+}
+
+/* STEP 2 — Sticky header */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+}
+
+/* STEP 3 — Make the card a relative positioning parent */
+
+.relative-parent {
+  position: relative;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* STEP 4 — Place the badge with absolute positioning */
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: crimson;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* STEP 5 — Create a fixed floating button */
+
+.chat-fab {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* STEP 6 — Static positioning reminder */
+/*
+  Static is the default position.
+  top/right/bottom/left do not affect static elements.
+*/
